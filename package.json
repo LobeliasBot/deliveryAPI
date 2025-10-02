@@ -7,7 +7,7 @@
     "scripts": {
         "test": "exho \"Error: no test specified\" $$ exit 1",
         "start": "node server.js",
-        "dev": "node --watch --no-warnings server.cjs"
+        "dev": "node --watch --no-warnings server.js"
     },
     "keywords": [],
     "author": "",
