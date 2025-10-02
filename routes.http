@@ -1,0 +1,6 @@
+POST http://localhost:3000/auth/login
+Content-type: application/json
+{
+    "email": "bot@lobeliasbot.com",
+    "senha": "Popopiloko@1"
+}
