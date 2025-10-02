@@ -211,13 +211,7 @@ fastify.get('/me', { preHandler: [authenticate] }, async (request, reply) => {
 
 // --- Iniciar o Servidor ---
 
-const start = async () => {
-  try {
-    await fastify.listen({ port: 3333 });
-  } catch (err) {
-    fastify.log.error(err);
-    process.exit(1);
-  }
-};
-
-start();
+fastify.listen({
+    host: '0.0.0.0',
+    port:process.env.PORT ?? 3333
+})
